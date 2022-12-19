@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{ font-size: 80px;}
+h2{ 
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+h3{ font-size: 30px;}
+h4{ 
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #777777;
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav h4{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px
+}
+
+.hero{
+    background-image: linear-gradient(rgba(212, 133, 101, 0.9),rgba(233, 95, 175, 0.9)), url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+
+}
+    .heroTitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        color: white;
+        height: 900px;
+        gap: 20px;
+    }
+
+    button{
+        padding: 15px 30px;
+        border: 0;
+        border-radius: 25px;
+        color: rgb(75, 72, 72);
+        font-weight: bold;
+    }
+
+.facilitySection, .serviceSection, .bookForm{
+    width: 60%;
+    margin: auto;
+}
+    .sectionTitle{
+        width: 70%;
+        margin: 120px auto 90px;
+        text-align: center;
+    }
+    .package{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .package img{
+        width: 100%;
+        height: 90%;
+    }
+
+/***********************figure hover effect start*************************/
+    figure{
+        position: relative;
+        background-color: red;
+    }
+    .layer{
+        position: absolute;
+        top:0;
+        background: transparent;        
+        height: 90%;
+        width: 100%;
+        transition: 0.5s;
+    }
+    
+    .layer figcaption{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        transition: 0.5s;
+        opacity: 0;
+        text-align: center;
+        font-size: 150%;
+    }
+    .layer:hover figcaption{
+        bottom: 40%;
+        opacity: 2;
+        color: white;
+    }
+    .layer:hover{
+        background: linear-gradient(rgba(212, 133, 101, 0.8) 0%, rgba(233, 95, 175, 0.8) 100%);
+        opacity: 1;
+    }
+/***********************figure hover effect end*************************/
+
+    .createPackage{
+        background-color: #222;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .createPackage img{
+        width: 100%;
+        min-height: 100%;
+    }
+        .packageDetail{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            padding: 100px;
+            width: 450px;
+            gap: 40px;
+        }
+        .packageDetail h3{
+            font-size: 2.7em;
+            background-image: linear-gradient(rgba(212, 133, 101),rgba(233, 95, 175));
+            -webkit-background-clip: text;
+            color: transparent; 
+        }
+        .packageDetail button{
+            border: 1px solid #777777;
+            background-color: #222;
+            color: white;
+        }
+        .packageDetail button:hover{
+            border-color: #222;
+            background-color: white;
+            color: #222;
+        }
+
+    .serviceList{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .serviceList .fa, .socMed .fa{
+        margin-bottom: 30px;
+        padding: 10px;
+        color: #777777;
+    }
+    .serviceList i:hover, .socMed i:hover{
+        background-image: linear-gradient(rgba(212, 133, 101),rgba(233, 95, 175));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .servicePhotoCollection{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .servicePhotoCollection img{
+        width: 100%;
+        height: 90%;
+    }
+.bookForm .sectionTitle{
+    margin: 20px auto;
+}
+.bookForm{
+    width: 60%;
+    
+    padding: 100px 80px;
+    box-shadow: -20px 0px 50px black;;
+}
+form{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+}
+form .bookingDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;   
+}
+    .clientDetails{
+        height: 30px;
+        padding-left: 10px;
+        color: #777777;
+        border: 0.5px solid #c0baba;
+    }
+    textarea{
+        padding: 10px;
+    }
+    form button{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        left: 85%;
+        width: 200px;
+        background: linear-gradient(rgba(212, 133, 101),rgba(233, 95, 175));
+        color: white;
+        
+    }
+    form button i{
+        transition: 0.5s;
+    }
+    form button:hover i{
+        position: relative;
+        left: 15px;
+        
+    }
+footer{
+    margin-top: 50px;
+}
+footer .contactDetails, footer .newsLetter{
+    background-color: #f9f9ff;
+    display: flex;
+    padding: 0 20%;
+}
+
+footer .newsLetter{ background-color: #222; }
+    .newsLetter .instaFeed{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px 5px;    
+    }
+    .newsLetter .instaFeed img{
+        width: 100%;
+        height: 130%;   
+    }
+
+    .newsLetter button{
+        padding: 5px;
+        border-radius: 2px;
+        background: linear-gradient(rgba(212, 133, 101),rgba(233, 95, 175));
+        color: #fcd2ff;   
+    }
+        
+
+        
+        
+
+
+
