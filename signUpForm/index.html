@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="submit.html" enctype="multipart/form-data">
+        <h1>Sign Up</h1>
+        <h2><span>1</span> Your Basic Info</h2>
+
+        <section class="basicInfo">
+            <label for="name">Name:</label>
+            <input class="textField" type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input class="textField" type="email" id="email" name="email" required>
+            <label for="name">Password:</label>
+            <input class="textField" type="password" id="password" name="password" required>
+    
+            <p>Age:</p>
+            <div class="option">
+                <input type="radio" id="under" name="age" value="under">
+                <label for="under">Under 13 years old</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="over" name="age" value="over">
+                <label for="over">Over 13 years old</label>
+            </div>
+
+        </section>
+
+        
+        <h2><span>2</span> Your Profile</h2>
+        <section class="profile">
+            <p>Upload Image:</p>
+            <input class="textField" type="file">
+            <p>Bio:</p>
+            <textarea></textarea>
+            <label for="role">Job Role:</label>
+            <select class="textField" name="role" id="role">
+                <option disabled="disabled">Web</option>
+                <option value="frontEnd">Front-end Developer</option>
+                <option value="php">PHP Developer</option>
+                <option value="python">Python Developer</option>
+                <option value="rails">Rails Developer</option>
+                <option value="web">Web Developer</option>
+                <option value="wordpress">Wordpress Developer</option>
+                <option disabled="disabled">Mobile</option>
+                <option value="android">Android Developer</option>
+                <option value="ios">IOS Developer</option>
+                <option value="mobile">Mobile Developer</option>
+                <option disabled="disabled">Business</option>
+                <option value="business">Business Owner</option>
+                <option value="freelance">Freelancer</option>
+            </select>
+
+            <p>Interests:</p>
+            <div>
+                <input type="checkbox" id="development" name="development" value="development">
+                <label for="development">Development</label>
+            </div>
+            <div>
+                <input type="checkbox" id="design" name="design" value="design">
+                <label for="design">Design</label>
+            </div>
+            <div>
+                <input type="checkbox" id="business" name="business" value="business">
+                <label for="business">Business</label>
+            </div>
+
+
+        </section>
+
+        <button type="submit">Sign Up</button>
+   </form> 
+
+
+</body>
+</html>
