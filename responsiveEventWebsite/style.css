@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+    font-size: 2;
+    
+}
+h3{
+    font-size: 1.3rem;
+   
+}
+h4{
+    font-size: 1.2rem;  
+    
+}
+p{
+    font-size: 1.1rem; 
+}
+
+.row-display, .column-display{
+    display: flex;
+    gap: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.column-display{
+    justify-content: center;
+    flex-direction: column;
+}
+.list-style-type {
+    list-style: none;
+}
+.image-background {
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 800px;
+}
+header{
+    background-image: url("images/background.jpg");
+    color: white;
+}
+.navbar{
+    padding: 1em 2em;
+    width: 80%;
+    margin: auto;
+}
+.navbar .fa{
+    display: none;
+}
+nav li:hover{
+    color: #F8EA8C;
+}
+
+.hero{
+    width: 80%;
+    height: 90%;
+    margin: auto;
+}
+
+.hero-intro{
+    font-size: 1.3em;
+}
+button{
+    padding: 1em;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 1.3em;
+    transition: 800ms;
+}
+button:hover{
+    background-color: rgb(131, 17, 17);
+    color: #F8EA8C;
+    border: 1px solid rgb(131, 17, 17);
+    
+}
+.cards-container{
+    width: 80%;
+    margin: auto;
+}
+.cards{
+    width: 30%;
+    align-items: flex-start;
+    
+}
+.card-content{
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.5);  
+}
+.card-detail{
+    padding: 1em; 
+}
+
+img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+main{
+    margin: 5em auto;
+}
+.gray-font{
+    color: gray;
+}
+footer{
+    background-color: rgb(87, 9, 9);
+    color: white;  
+    padding: 3em;
+}
+
+
+/* Media queries */
+
+@media(max-width:850px){
+    h1{
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;    
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    h4{
+        font-size: 1rem;    
+    }
+    p{
+        font-size: 0.9rem; 
+    }
+    .cards {
+        width: 100%;    
+    }
+    .card-content{
+        width: 100%;
+    }
+    img{
+        height: 200px;   
+    }
+    
+    footer .row-display{
+        align-items: stretch;
+    }
+    .navbar .fa{
+        display: block;
+    }
+    #links li{
+        display: block;
+
+        /* flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 100px;
+        width: 150px;
+        background-color: rgb(87, 9, 9);
+        padding: 50px; */
+        
+    }
+
+}
+
