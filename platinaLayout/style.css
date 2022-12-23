@@ -94,7 +94,6 @@ nav h4{
 /***********************figure hover effect start*************************/
     figure{
         position: relative;
-        background-color: red;
     }
     .layer{
         position: absolute;
@@ -117,7 +116,7 @@ nav h4{
     }
     .layer:hover figcaption{
         bottom: 40%;
-        opacity: 2;
+        opacity: 1;
         color: white;
     }
     .layer:hover{
